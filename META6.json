@@ -1,0 +1,22 @@
+{
+  "auth" : "cpan:ELIZABETH",
+  "authors" : [
+    "Elizabeth Mattijsen"
+  ],
+  "build-depends" : [ ],
+  "depends" : [ ],
+  "description" : "export ClassHOW to intercept all method calls",
+  "license" : "Artistic-2.0",
+  "name" : "InterceptAllMethods",
+  "perl" : "6.c",
+  "provides" : {
+    "InterceptAllMethods" : "lib/InterceptAllMethods.pm6"
+  },
+  "resources" : [ ],
+  "source-url" : "https://github.com/lizmat/InterceptAllMethods",
+  "tags" : [
+    "UTILS"
+  ],
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}
