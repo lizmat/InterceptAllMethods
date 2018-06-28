@@ -1,7 +1,7 @@
 use v6.c;
 
 # https://stackoverflow.com/questions/51031264/how-to-create-a-class-that-doesnt-inherit-from-any-other-class
-class InterceptAllMethodsHOW is Metamodel::ClassHOW {
+class InterceptAllMethodsHOW:ver<0.0.1>:auth<cpan:ELIZABETH> is Metamodel::ClassHOW {
     method publish_method_cache(|) { }
 }
 package EXPORTHOW {
