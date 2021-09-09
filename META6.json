@@ -1,22 +1,26 @@
 {
-  "auth" : "cpan:ELIZABETH",
-  "authors" : [
+  "auth": "zef:lizmat",
+  "authors": [
     "Elizabeth Mattijsen"
   ],
-  "build-depends" : [ ],
-  "depends" : [ ],
-  "description" : "export ClassHOW to intercept all method calls",
-  "license" : "Artistic-2.0",
-  "name" : "InterceptAllMethods",
-  "perl" : "6.c",
-  "provides" : {
-    "InterceptAllMethods" : "lib/InterceptAllMethods.pm6"
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "export ClassHOW to intercept all method calls",
+  "license": "Artistic-2.0",
+  "name": "InterceptAllMethods",
+  "perl": "6.d",
+  "provides": {
+    "InterceptAllMethods": "lib/InterceptAllMethods.rakumod"
   },
-  "resources" : [ ],
-  "source-url" : "https://github.com/lizmat/InterceptAllMethods",
-  "tags" : [
+  "resources": [
+  ],
+  "source-url": "https://github.com/lizmat/InterceptAllMethods",
+  "tags": [
     "UTILS"
   ],
-  "test-depends" : [ ],
-  "version" : "0.0.1"
+  "test-depends": [
+  ],
+  "version": "0.0.2"
 }

@@ -1,11 +1,11 @@
-use v6.c;
+use v6.d;
 
 # https://stackoverflow.com/questions/51031264/how-to-create-a-class-that-doesnt-inherit-from-any-other-class
-class InterceptAllMethodsHOW:ver<0.0.1>:auth<cpan:ELIZABETH> is Metamodel::ClassHOW {
+class InterceptAllMethods:ver<0.0.2>:auth<zef:lizmat> is Metamodel::ClassHOW {
     method publish_method_cache(|) { }
 }
 package EXPORTHOW {
-    constant class = InterceptAllMethodsHOW;
+    constant class = InterceptAllMethods;
 }
 
 =begin pod
@@ -36,14 +36,14 @@ method at all.
 
 =head1 AUTHOR
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/InterceptAllMethods .
 Comments and Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018, 2021 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

@@ -2,5 +2,12 @@ Revision history for InterceptAllMethods
 
 {{$NEXT}}
 
+0.0.2  2021-09-09T20:12:46+02:00
+    - Change module extension to .rakumod
+    - Upgrade to use Raku 6.d at least
+    - Migrate to zef ecosystem
+    - Update email address
+    - Update copyright year
+
 0.0.1  2018-06-28T11:07:51+02:00
     - Initial version

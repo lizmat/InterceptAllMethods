@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/lizmat/InterceptAllMethods.svg?branch=master)](https://travis-ci.org/lizmat/InterceptAllMethods)
-
 NAME
 ====
 
@@ -26,14 +24,14 @@ This allows one to implement one's own caching methods, or not have any caching 
 AUTHOR
 ======
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/InterceptAllMethods . Comments and Pull Requests are welcome.
 
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018, 2021 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
