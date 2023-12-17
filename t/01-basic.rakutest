@@ -11,11 +11,15 @@ plan 4;
 my @seen;
 class Foo {
     method ^find_method(Mu \obj, Str $name) {
-        my constant &the-method = proto method handler(|) {*};
+        my constant &the-method = proto method handler(|) {*}
         multi method handler(Foo:U: |c) {
-            @seen.push("type", $name);
+            @seen.push("type", $name) if $name ne 'is-generic';
             use nqp;
-            $name eq 'new' ?? nqp::create(obj) !! $name
+            $name eq 'new'
+              ?? nqp::create(obj)
+              !! $name eq 'is-generic'
+                ?? False
+                !! $name
         }
         multi method handler(Foo:D: |c) {
             @seen.push("instance",$name);
@@ -33,4 +37,4 @@ is $foo.bar, "bar", 'did $foo return bar';
 
 is @seen, "type new type foo instance bar", 'did we see all the calls';
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4

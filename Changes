@@ -2,6 +2,12 @@ Revision history for InterceptAllMethods
 
 {{$NEXT}}
 
+0.0.3  2023-12-17T16:41:26+01:00
+    - Make tests pass with 2023.12
+    - Update copyright year
+    - Add sponsor link
+    - Change test extension to .rakutest
+
 0.0.2  2021-09-09T20:12:46+02:00
     - Change module extension to .rakumod
     - Upgrade to use Raku 6.d at least
