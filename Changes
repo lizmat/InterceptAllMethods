@@ -1,6 +1,8 @@
 Revision history for InterceptAllMethods
 
 {{$NEXT}}
+
+0.0.4  2025-06-04T16:43:53+02:00
     - Add CI badge for each OS
     - Update copyright year
 
