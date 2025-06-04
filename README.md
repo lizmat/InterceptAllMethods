@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/lizmat/InterceptAllMethods/actions/workflows/linux.yml/badge.svg)](https://github.com/lizmat/InterceptAllMethods/actions) [![Actions Status](https://github.com/lizmat/InterceptAllMethods/actions/workflows/macos.yml/badge.svg)](https://github.com/lizmat/InterceptAllMethods/actions) [![Actions Status](https://github.com/lizmat/InterceptAllMethods/actions/workflows/windows.yml/badge.svg)](https://github.com/lizmat/InterceptAllMethods/actions)
+
 NAME
 ====
 
@@ -6,13 +8,15 @@ InterceptAllMethods - export ClassHOW to intercept all method calls
 SYNOPSIS
 ========
 
-    use InterceptAllMethods;
-     
-    class FooBar {
-        method ^find_method(Mu $obj, Str $name) {
-            return -> | { say "calling $name" }
-        }
+```raku
+use InterceptAllMethods;
+
+class FooBar {
+    method ^find_method(Mu $obj, Str $name) {
+        return -> | { say "calling $name" }
     }
+}
+```
 
 DESCRIPTION
 ===========
@@ -33,7 +37,7 @@ If you like this module, or what I’m doing more generally, committing to a [sm
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018, 2021, 2023 Elizabeth Mattijsen
+Copyright 2018, 2021, 2023, 2025 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

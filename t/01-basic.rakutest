@@ -1,9 +1,4 @@
-use v6.c;
 use Test;
-
-# Alas, we need to do some NQP here to be able to check the type of the
-# created object without actually calling any methods on the object.
-use nqp;
 use InterceptAllMethods;
 
 plan 4;
@@ -31,7 +26,7 @@ class Foo {
 }
 
 my $foo := Foo.new;
-ok nqp::eqaddr($foo.WHAT, Foo), 'did we get a Foo';
+ok infix:<=:=>($foo.WHAT, Foo), 'did we get a Foo';
 is Foo.foo,  "foo", 'did Foo return foo';
 is $foo.bar, "bar", 'did $foo return bar';
 
